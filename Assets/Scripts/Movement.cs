@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float jumpStrength;
+    public float jumpStrength = 3.5f;
     public Rigidbody2D myRigidBody;
     public ScoreLogic logic;
     public bool catAlive = true;
-    float inputBuffer;
-    float scoreBuffer;
+    private float inputBuffer;
+    private float scoreBuffer;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,7 +42,6 @@ public class Movement : MonoBehaviour
     {
         logic.gameOver();
         catAlive = false;
-        Destroy(gameObject);
     }
 
 }
