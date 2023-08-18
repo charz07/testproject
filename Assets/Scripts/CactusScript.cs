@@ -19,7 +19,7 @@ public class CactusScript : MonoBehaviour
          //Debug.Log(transform.position.x);
         if(transform.position.x < deadzone)
         {
-            //Debug.Log("cactus begone");
+            Destroy(gameObject);
         }
     }
 }
