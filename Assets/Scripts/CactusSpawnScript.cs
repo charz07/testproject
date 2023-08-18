@@ -5,7 +5,7 @@ using UnityEngine;
 public class CactusSpawnScript : MonoBehaviour
 {
     public GameObject Cactus;
-    public float minSpawnRate = 0.5f;
+    public float minSpawnRate = 0.1f;
     public float maxSpawnRate = 2.5f;
     private float spawnRate;
     private float timer = 0;
